@@ -64,6 +64,9 @@
             @if(session('msg'))
               <p class="msg">{{ session('msg') }}</p>
             @endif
+            @if(session('err'))
+              <p class="err">{{ session('err') }}</p>
+            @endif
             @yield('content')
           </div>
         </div>
